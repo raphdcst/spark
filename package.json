@@ -20,12 +20,14 @@
 		"@effect/platform-node": "4.1.2",
 		"alchemy": "https://pkg.alchemy.run/alchemy/pr:2754:f0d1244",
 		"astro": "7.4.4",
+		"drizzle-orm": "^0.45.4",
 		"effect": "4.1.2",
 		"solid-js": "1.9.18"
 	},
 	"devDependencies": {
 		"@alchemy.run/frontend-frameworks": "https://pkg.alchemy.run/@alchemy.run/frontend-frameworks/-/3617848483a86dd656cce043580b9499384c059abde89f0645945f11a895fc0f.tgz",
 		"@astrojs/compiler-rs": "^0.5.2",
+		"drizzle-kit": "^0.31.11",
 		"oxfmt": "^0.75.0",
 		"oxlint": "^1.90.0"
 	},
