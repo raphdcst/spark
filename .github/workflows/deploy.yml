@@ -16,7 +16,22 @@ env:
       || (github.ref == 'refs/heads/main' && 'prod' || github.ref_name) }}
 
 jobs:
+  validate:
+    if: github.event.action != 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install
+
+      - name: Typecheck
+        run: bun run astro check
+
+      - name: Build
+        run: bun run build
+
   deploy:
+    needs: validate
     if: github.event.action != 'closed'
     runs-on: ubuntu-latest
     permissions:
