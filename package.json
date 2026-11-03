@@ -26,6 +26,7 @@
 	},
 	"devDependencies": {
 		"@alchemy.run/frontend-frameworks": "https://pkg.alchemy.run/@alchemy.run/frontend-frameworks/-/3617848483a86dd656cce043580b9499384c059abde89f0645945f11a895fc0f.tgz",
+		"@astrojs/check": "^0.9.12",
 		"@astrojs/compiler-rs": "^0.5.2",
 		"drizzle-kit": "^1.0.0-rc.5",
 		"drizzle-orm": "^1.0.0-rc.5",
