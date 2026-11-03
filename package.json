@@ -11,10 +11,12 @@
 		"destroy": "alchemy destroy",
 		"format": "oxfmt",
 		"lint": "oxlint",
-		"check": "bun run lint && bun run format"
+		"check": "bun run lint && bun run format",
+		"typecheck": "astro check"
 	},
 	"dependencies": {
 		"@alchemy.run/cloudflare": "https://pkg.alchemy.run/@alchemy.run/cloudflare/pr:2754:f0d1244",
+		"@alchemy.run/github": "https://pkg.alchemy.run/@alchemy.run/github/pr:2754:f0d1244",
 		"@astrojs/solid-js": "7.1.2",
 		"@effect/platform-bun": "4.1.2",
 		"@effect/platform-node": "4.1.2",
@@ -25,6 +27,7 @@
 	},
 	"devDependencies": {
 		"@alchemy.run/frontend-frameworks": "https://pkg.alchemy.run/@alchemy.run/frontend-frameworks/-/3617848483a86dd656cce043580b9499384c059abde89f0645945f11a895fc0f.tgz",
+		"@astrojs/check": "^0.9.12",
 		"@astrojs/compiler-rs": "^0.5.2",
 		"drizzle-kit": "^1.0.0-rc.5",
 		"drizzle-orm": "^1.0.0-rc.5",
