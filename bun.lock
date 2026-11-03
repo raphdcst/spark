@@ -6,6 +6,7 @@
       "name": "spark",
       "dependencies": {
         "@alchemy.run/cloudflare": "https://pkg.alchemy.run/@alchemy.run/cloudflare/pr:2754:f0d1244",
+        "@alchemy.run/github": "https://pkg.alchemy.run/@alchemy.run/github/pr:2754:f0d1244",
         "@astrojs/solid-js": "7.1.2",
         "@effect/platform-bun": "4.1.2",
         "@effect/platform-node": "4.1.2",
@@ -34,6 +35,8 @@
     "@alchemy.run/docker": ["@alchemy.run/docker@https://pkg.alchemy.run/@alchemy.run/docker/-/07743cc2a8c15470827933ad1033f4806d323ab391eee03cbe02a4893fddae21.tgz", { "dependencies": { "rolldown": "1.2.13" }, "peerDependencies": { "@effect/platform-bun": "^4.1.0", "alchemy": "https://pkg.alchemy.run/alchemy/-/ce2a753d067e9990ab4ee8823ef1ed360d62d8bec158212d9078c317c9b04115.tgz", "effect": "^4.1.0" }, "optionalPeers": ["@effect/platform-bun"] }, "sha512-17JavI2nxuDG9TjLivLgJOHC7Fmkf6WOTQIrPVKlZybJcwtLYZnQnFs5whQI5rWAdN/4/xhseXv+zaLvEtxL1g=="],
 
     "@alchemy.run/frontend-frameworks": ["@alchemy.run/frontend-frameworks@https://pkg.alchemy.run/@alchemy.run/frontend-frameworks/-/3617848483a86dd656cce043580b9499384c059abde89f0645945f11a895fc0f.tgz", { "dependencies": { "@alchemy.run/cloudflare-runtime": "https://pkg.alchemy.run/@alchemy.run/cloudflare-runtime/-/daf7dcb8720e594c21c73dffb92fd393fa22126f13daf94ba6819923caf21b0b.tgz", "@alchemy.run/redis": "https://pkg.alchemy.run/@alchemy.run/redis/-/de1c99b91a5de278adf898e4672be9acbfbfa3962c6c284e2c83d918427b5b49.tgz", "@distilled.cloud/aws": "https://pkg.alchemy.run/@distilled.cloud/aws/-/1f044209d8c55875a615458371ebb127e8bf061e5403f01a2e614eed80cd57b3.tgz", "@distilled.cloud/cloudflare": "https://pkg.alchemy.run/@distilled.cloud/cloudflare/-/8127b84b5852b7a489737a092d098198ddcdb9624f41bb499c69fec3e107595b.tgz", "@effect/platform-node": "^4.1.0", "esbuild": "^0.28.1", "rolldown": "1.2.13", "srvx": "1.0.7", "tinyglobby": "^0.2.17" }, "peerDependencies": { "@effect/platform-bun": "^4.1.0", "@effect/platform-node": "^4.1.0", "@octanejs/vite-plugin": ">=0.5.0", "@opennextjs/cloudflare": "1.20.13", "@sveltejs/kit": ">=3.0.0", "@vitejs/plugin-react": "^6.1.2", "astro": "^7.4.0", "effect": "^4.1.0", "hono": "^4.12.14", "nuxt": ">=4.5.0", "vinext": "^1.3.1", "vite": "^7.0.0 || ^8.0.0", "vocs": "2.11.1", "waku": "1.0.0-rc.4" }, "optionalPeers": ["@effect/platform-bun", "@effect/platform-node", "@octanejs/vite-plugin", "@opennextjs/cloudflare", "@sveltejs/kit", "@vitejs/plugin-react", "astro", "hono", "nuxt", "vinext", "vite", "vocs", "waku"] }, "sha512-2LeVrzgPB6GdKyqITvJJ13FcoaTGHm3lX1Zai867G2TJVEW5i6t3GdPQUHn1wpseOW315p3p577VVniB3/I4ag=="],
+
+    "@alchemy.run/github": ["@alchemy.run/github@https://pkg.alchemy.run/@alchemy.run/github/pr:2754:f0d1244", { "dependencies": { "@distilled.cloud/core": "https://pkg.alchemy.run/@distilled.cloud/core/-/6540f1c561fb2d2676b8591cc6c9e0bfa081b6dcf50a86632e3db745d3b44bf8.tgz", "@distilled.cloud/github": "https://pkg.alchemy.run/@distilled.cloud/github/-/bc004f750d0616f538e7bb968bc0f9f259354fe2b7738b62e008257bd682e3a8.tgz", "libsodium-wrappers": "^0.8.3" }, "peerDependencies": { "alchemy": "https://pkg.alchemy.run/alchemy/-/ce2a753d067e9990ab4ee8823ef1ed360d62d8bec158212d9078c317c9b04115.tgz", "effect": "^4.1.0" } }, "sha512-SJTcva1cztMsKosSU3+rJFl4ONKzW+HXcbG8nQSW7GHQRifVK66JUArSKSVzir69NsiDCFinb02EoiPEh2ENpQ=="],
 
     "@alchemy.run/node-utils": ["@alchemy.run/node-utils@https://pkg.alchemy.run/@alchemy.run/node-utils/-/f7ed79ab54e4abbdb7445242a8127338f02468a98f12a5ce681b50f7e1b0ca50.tgz", { "dependencies": { "chokidar": "^5.0.0", "rolldown": "1.2.13" } }, "sha512-w8g4tRGL/mHodQ7dBA0g1xYU4p4ZQIB0NPVFUxBhyJBOJmsz6+1R8FklmxonNGwYBrdUf4LeO57KYdMU/0FXGA=="],
 
@@ -160,6 +163,8 @@
     "@distilled.cloud/cloudflare": ["@distilled.cloud/cloudflare@https://pkg.alchemy.run/@distilled.cloud/cloudflare/-/8127b84b5852b7a489737a092d098198ddcdb9624f41bb499c69fec3e107595b.tgz", { "dependencies": { "@distilled.cloud/core": "https://pkg.alchemy.run/@distilled.cloud/core/-/6540f1c561fb2d2676b8591cc6c9e0bfa081b6dcf50a86632e3db745d3b44bf8.tgz" }, "peerDependencies": { "effect": "^4.0.5" } }, "sha512-lbBWazIdlBq5ziCVwKGsUcJ+Q5Zz99tMdaENE7etH4QxLTSCUWqhYtB9YAP8T+sOXGUvenO10FWy5k3KaWyrYA=="],
 
     "@distilled.cloud/core": ["@distilled.cloud/core@https://pkg.alchemy.run/@distilled.cloud/core/-/6540f1c561fb2d2676b8591cc6c9e0bfa081b6dcf50a86632e3db745d3b44bf8.tgz", { "peerDependencies": { "effect": "^4.0.5" } }, "sha512-vApim0gF/KvDTZlsVilhOT/RQyz+sKBDnviBEqGeiH8Q3wcq4Q0r75svEs3HSTgZjYDE6xFaxdu5wilcA79ysw=="],
+
+    "@distilled.cloud/github": ["@distilled.cloud/github@https://pkg.alchemy.run/@distilled.cloud/github/-/bc004f750d0616f538e7bb968bc0f9f259354fe2b7738b62e008257bd682e3a8.tgz", { "dependencies": { "@distilled.cloud/core": "https://pkg.alchemy.run/@distilled.cloud/core/-/6540f1c561fb2d2676b8591cc6c9e0bfa081b6dcf50a86632e3db745d3b44bf8.tgz" }, "peerDependencies": { "effect": "^4.0.5" } }, "sha512-X9miP92G8rUZibSfA1qFaZOoI31WvgXD/h5cg0+GggoGfsw42MHkSbhaHZLTWr/OFj023TVsaCzwjXAUeWOVVg=="],
 
     "@distilled.cloud/iceberg": ["@distilled.cloud/iceberg@https://pkg.alchemy.run/@distilled.cloud/iceberg/-/e87418072ae6c2d89190b76578f946e7ad93b121977acc54d918de61dd657adf.tgz", { "dependencies": { "@distilled.cloud/core": "https://pkg.alchemy.run/@distilled.cloud/core/-/6540f1c561fb2d2676b8591cc6c9e0bfa081b6dcf50a86632e3db745d3b44bf8.tgz" }, "peerDependencies": { "effect": "^4.0.5" } }, "sha512-kzmZwrGBKP3u9sI1AhHp4YvOdbg4traxF9tym4EjKQFRaZeyqB5BIoo6zc5c1nbM0i6dPeSqsDEKoNSmHJc5QQ=="],
 
@@ -643,6 +648,10 @@
 
     "jsonc-parser": ["jsonc-parser@3.3.1", "", {}, "sha512-HUgH65KyejrUFPvHFPbqOY0rsFip3Bo5wb4ngvdi1EpCYWUQDC5V+Y7mZws+DLkr4M//zQJoanu1SP+87Dv1oQ=="],
 
+    "libsodium": ["libsodium@0.8.4", "", {}, "sha512-lMcYaRi0zcs7tarATsQUYC7rstliIXZuoq0c6zXSgNtSNtdvBgkSegjWhpMJAXzKX3SUSwIp7+zEsob+j3LuRw=="],
+
+    "libsodium-wrappers": ["libsodium-wrappers@0.8.4", "", { "dependencies": { "libsodium": "^0.8.0" } }, "sha512-mu8aAWucZjTB5O/BtGXtW4e1agy7uHxNYG7zPthmmD1jU43LCDmSWZLN4JhflbdPXj3yDO4lxM1O9hLDgIOXDw=="],
+
     "lightningcss": ["lightningcss@1.33.0", "", { "dependencies": { "detect-libc": "^2.0.3" }, "optionalDependencies": { "lightningcss-android-arm64": "1.33.0", "lightningcss-darwin-arm64": "1.33.0", "lightningcss-darwin-x64": "1.33.0", "lightningcss-freebsd-x64": "1.33.0", "lightningcss-linux-arm-gnueabihf": "1.33.0", "lightningcss-linux-arm64-gnu": "1.33.0", "lightningcss-linux-arm64-musl": "1.33.0", "lightningcss-linux-x64-gnu": "1.33.0", "lightningcss-linux-x64-musl": "1.33.0", "lightningcss-win32-arm64-msvc": "1.33.0", "lightningcss-win32-x64-msvc": "1.33.0" } }, "sha512-WkUDrojuJs0xkgGf2udWxa3yGBRxPtxUkB79i6aCZLRgc7PM8fZe9TosfPDcvEpQZbuFASnHYmRLBLUbmLOIIA=="],
 
     "lightningcss-android-arm64": ["lightningcss-android-arm64@1.33.0", "", { "os": "android", "cpu": "arm64" }, "sha512-gEpRTalKdosp4Bb8qWtc2iOgE5SeIHlpS1up9bFq2wAyYhl1UdTObYiHe98zEM9SQvSoqQZ1IQD0JNpg3Ml5pg=="],
@@ -894,6 +903,8 @@
     "zod": ["zod@4.6.7", "", {}, "sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg=="],
 
     "zwitch": ["zwitch@2.0.4", "", {}, "sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A=="],
+
+    "@alchemy.run/cloudflare-runtime/@distilled.cloud/cloudflare": ["@distilled.cloud/cloudflare@https://pkg.alchemy.run/@distilled.cloud/cloudflare/pr:2754:f0d1244", { "dependencies": { "@distilled.cloud/core": "https://pkg.alchemy.run/@distilled.cloud/core/-/6540f1c561fb2d2676b8591cc6c9e0bfa081b6dcf50a86632e3db745d3b44bf8.tgz" }, "peerDependencies": { "effect": "^4.0.5" } }, "sha512-lbBWazIdlBq5ziCVwKGsUcJ+Q5Zz99tMdaENE7etH4QxLTSCUWqhYtB9YAP8T+sOXGUvenO10FWy5k3KaWyrYA=="],
 
     "@alchemy.run/cloudflare-runtime/magic-string": ["magic-string@0.30.21", "", { "dependencies": { "@jridgewell/sourcemap-codec": "^1.5.5" } }, "sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ=="],
 
