@@ -19,6 +19,12 @@ export default Stack(
 		const db = yield* Database;
 		const sessions = yield* Sessions;
 
+		const ressources = {
+			appWorker: app.workerName,
+			database: db.databaseName,
+			sessionsNamespace: sessions.title,
+		};
+
 		if (process.env.PULL_REQUEST) {
 			yield* GitHub.Comment('preview-comment', {
 				owner: 'raphdcst',
@@ -35,13 +41,16 @@ export default Stack(
               _This comment updates automatically with each push._
             `,
 			});
+
+			return {
+				...ressources,
+				url: app.url,
+			};
 		}
 
 		return {
+			...ressources,
 			devUrl: app.url,
-			appWorker: app.workerName,
-			database: db.databaseName,
-			sessionsNamespace: sessions.title,
 		};
 	}),
 );
