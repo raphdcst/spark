@@ -11,7 +11,8 @@
 		"destroy": "alchemy destroy",
 		"format": "oxfmt",
 		"lint": "oxlint",
-		"check": "bun run lint && bun run format"
+		"check": "bun run lint && bun run format",
+		"typecheck": "astro check"
 	},
 	"dependencies": {
 		"@alchemy.run/cloudflare": "https://pkg.alchemy.run/@alchemy.run/cloudflare/pr:2754:f0d1244",
