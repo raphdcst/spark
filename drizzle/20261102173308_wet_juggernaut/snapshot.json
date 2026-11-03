@@ -1,0 +1,64 @@
+{
+	"dialect": "sqlite",
+	"id": "ac7fb736-2aa2-488e-a6df-899c057e154b",
+	"prevIds": ["00000000-0000-0000-0000-000000000000"],
+	"version": "7",
+	"ddl": [
+		{
+			"name": "items",
+			"entityType": "tables"
+		},
+		{
+			"table": "items",
+			"name": "id",
+			"type": "integer",
+			"notNull": false,
+			"autoincrement": true,
+			"default": null,
+			"generated": null,
+			"entityType": "columns"
+		},
+		{
+			"table": "items",
+			"name": "title",
+			"type": "text",
+			"notNull": true,
+			"autoincrement": false,
+			"default": null,
+			"generated": null,
+			"entityType": "columns"
+		},
+		{
+			"table": "items",
+			"name": "created_at",
+			"type": "integer",
+			"notNull": true,
+			"autoincrement": false,
+			"default": null,
+			"generated": null,
+			"entityType": "columns"
+		},
+		{
+			"table": "items",
+			"name": "items_title_unique",
+			"columns": [
+				{
+					"value": "title",
+					"isExpression": false
+				}
+			],
+			"isUnique": true,
+			"where": null,
+			"origin": "manual",
+			"entityType": "indexes"
+		},
+		{
+			"table": "items",
+			"name": "items_pk",
+			"columns": ["id"],
+			"nameExplicit": false,
+			"entityType": "pks"
+		}
+	],
+	"renames": []
+}
