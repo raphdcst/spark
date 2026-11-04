@@ -12,6 +12,15 @@ const App = Website.Astro('App', {
 	dev: {
 		port: 3000,
 	},
+	access: {
+		policies: [
+			{
+				decision: 'allow',
+				include: [{ emailDomain: 'local.dev' }, { email: 'rdecostaire@gmail.com' }],
+				sessionDuration: '12h',
+			},
+		],
+	},
 });
 
 export type WebsiteEnv = InferEnv<typeof App>;
