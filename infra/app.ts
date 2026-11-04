@@ -16,7 +16,7 @@ const App = Website.Astro('App', {
 		policies: [
 			{
 				decision: 'allow',
-				include: [{ emailDomain: 'local.dev' }, { email: 'rdecostaire@gmail.com' }],
+				include: [{ email: 'rdecostaire@gmail.com' }],
 				sessionDuration: '12h',
 			},
 		],
